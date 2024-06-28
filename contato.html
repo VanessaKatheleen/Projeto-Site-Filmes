@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Reset básico de CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos de todos os blocos da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Cor de fundo */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para CONTAINERS principais (header, main, footer) */
+        .container {
+            width: 100%;
+            max-width: 1200px; /* Defina um limite máximo se desejar */
+            margin: 0 auto; /* Centraliza horizontalmente */
+            padding: 0 15px; /* Ajuste de padding para evitar espaços laterais */
+        }
+
+        header {
+            margin-bottom: 0px; /* Espaçamento entre os headers */
+        }
+
+        footer {
+            margin-top: 40px;
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Ajustes para imagens responsivas */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilizando links no container-header */
+        .container .navbar-nav .nav-link {
+            padding: 5px 10px; /* Espaçamento interno */
+            border: 1px solid transparent; /* Borda transparente inicial */
+            border-radius: 4px; /* Cantos arredondados */
+            transition: background-color 0.3s, color 0.3s, border 0.3s; /* Transições suaves */
+        }
+
+        /* Estilo para quando o link estiver com o cursor em cima */
+        .container .navbar-nav .nav-link:hover {
+            color: black; /* Cor do texto ao passar o mouse */
+            background-color: gray; /* Cor de fundo ao passar o mouse */
+            border-color: gray; /* Cor da borda ao passar o mouse */
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- Primeiro Header com Menu Principal -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="pagina inicial.html">Logo e nome</a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mr-auto">  <!-- "mr-auto" direciona os textos para o lado esquerdo da pagina -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="pagina inicial.html">Início <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="criticas.html">Críticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="filmes.html">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="series.html">Séries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    
+     <!-- Segundo Header com Menu Secundário -->
+     <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--largura e cor do bloco, todos discriminados aqui-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#secondaryNavbar" aria-controls="secondaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="secondaryNavbar">
+                <ul class="navbar-nav mr-auto"> <!-- "mr-auto" direciona os textos para o lado esquerdo da pagina -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="ação.html">Ação e aventura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comedia.html">Comédia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drama.html">Drama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="romance.html">Romance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terror.html">Terror</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ficção.html">Ficção Científica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentario.html">Documentário</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <h1 class="mt-4">Artigo</h1>
+                    <article class="mb-4">
+    
+                    </article>
+                    <!-- Adicione mais artigos conforme necessário -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Críticas de Filmes. Todos os direitos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#" class="text-white">Termos de Uso</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-white">Política de Privacidade</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
