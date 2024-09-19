@@ -23,7 +23,7 @@ Fique à vontade para explorar o código atual!
 
 🚧 **Em desenvolvimento** 🚧
 
-Ainda há muito a ser feito, mas estou animado para continuar melhorando este projeto à medida que adquiro mais conhecimento.
+Ainda há muito a ser feito, mas estou animada para continuar melhorando este projeto à medida que adquiro mais conhecimento.
 
 ## Como Contribuir
 
