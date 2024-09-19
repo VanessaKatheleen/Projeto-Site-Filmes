@@ -1,156 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>W3.CSS Template</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <style>
-        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+        /* Reset básico de CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos de todos os blocos da página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Cor de fundo */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para CONTAINERS principais (header, main, footer) */
+        .container {
+            width: 100%;
+            max-width: 1200px; /* Defina um limite máximo se desejar */
+            margin: 0 auto; /* Centraliza horizontalmente */
+            padding: 0 15px; /* Ajuste de padding para evitar espaços laterais */
+        }
+
+        header {
+            margin-bottom: 0px; /* Espaçamento entre os headers */
+        }
+
+        footer {
+            margin-top: 40px;
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Ajustes para imagens responsivas */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Estilizando links no container-header */
+        .container .navbar-nav .nav-link {
+            padding: 5px 10px; /* Espaçamento interno */
+            border: 1px solid transparent; /* Borda transparente inicial */
+            border-radius: 4px; /* Cantos arredondados */
+            transition: background-color 0.3s, color 0.3s, border 0.3s; /* Transições suaves */
+        }
+
+        /* Estilo para quando o link estiver com o cursor em cima */
+        .container .navbar-nav .nav-link:hover {
+            color: black; /* Cor do texto ao passar o mouse */
+            background-color: gray; /* Cor de fundo ao passar o mouse */
+            border-color: gray; /* Cor da borda ao passar o mouse */
+        }
+       
     </style>
 </head>
-<body class="w3-light-grey">
-
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
-<div class="w3-content" style="max-width:1400px">
-
-    <!-- Header -->
-    <header class="w3-container w3-center w3-padding-32">
-        <h1><b>O QUE ASSISTIR</b></h1>
-        <p>Voce tem alguma duvida do que <span class="w3-tag">assistir?</span></p>
-        <p>Pega logo sua pipoca!</p>
-
-    </header>
-
-    <!-- Grid -->
-    <div class="w3-row">
-
-        <!-- Blog entries -->
-        <div class="w3-col l8 s12">
-            <!-- Blog entry -->
-            <div class="w3-card-4 w3-margin w3-white">
-                <img src="https://www.w3schools.com/w3images/woods.jpg" alt="Nature" style="width:100%">
-                <div class="w3-container">
-                    <h3><b>A Fuga de Shawshank (1994)</b></h3>
-                    <h5>Um Drama Inesquecível <span class="w3-opacity">April 7, 2014</span></h5>
-                </div>
-
-                <div class="w3-container">
-                    <p>Em 1947, Andy Dufresne, um jovem banqueiro de sucesso, é condenado injustamente à prisão perpétua pelo assassinato de sua esposa e amante. Enviado para Shawshank, uma prisão brutal e decadente, ele logo se depara com a dura realidade da vida carcerária: violência, corrupção e a constante ameaça de brutalidade por parte dos guardas e de outros detentos.
-
-                        Apesar das adversidades, Andy se recusa a desistir da esperança. Ele faz amizade com Red, um presidiário experiente e cheio de histórias, e juntos, eles encontram maneiras de sobreviver e até mesmo prosperar dentro das muralhas da prisão. Andy usa sua inteligência e perspicácia para se tornar indispensável ao diretor da prisão, ganhando acesso a privilégios e oportunidades que o aproximam da liberdade.
-
-                        Ao longo dos anos, Andy se torna um símbolo de esperança e inspiração para seus companheiros de cela, demonstrando que mesmo nas situações mais sombrias, a força do espírito humano pode prevalecer. Com determinação e inteligência, ele elabora um plano meticuloso para escapar da prisão e finalmente alcançar a liberdade que tanto almeja.
-                    </p>
-                    <div class="w3-row">
-                        <div class="w3-col m8 s12">
-                            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-                        </div>
-                        <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
-                        </div>
-                    </div>
+<body>
+    <!-- Primeiro Header com Menu Principal -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Logo e nome</a> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mr-auto">  <!-- "mr-auto" direciona os textos para o lado esquerdo da pagina -->
+                        <li class="nav-item active">
+                            <a class="nav-link" href="pagina inicial.html">Início <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="criticas.html">Críticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="filmes.html">Filmes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="series.html">Séries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
                 </div>
             </div>
-            <hr>
+        </nav>
 
-            <!-- Blog entry -->
-            <div class="w3-card-4 w3-margin w3-white">
-                <img src="https://www.w3schools.com/w3images/bridge.jpg" alt="Norway" style="width:100%">
-                <div class="w3-container">
-                    <h3><b>BLOG ENTRY</b></h3>
-                    <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-                </div>
+    
+     <!-- Segundo Header com Menu Secundário -->
+     <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!--largura e cor do bloco, todos discriminados aqui-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#secondaryNavbar" aria-controls="secondaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="w3-container">
-                    <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-                        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-                    <div class="w3-row">
-                        <div class="w3-col m8 s12">
-                            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-                        </div>
-                        <div class="w3-col m4 w3-hide-small">
-                            <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- END BLOG ENTRIES -->
-        </div>
-
-        <!-- Introduction menu -->
-        <div class="w3-col l4">
-            <!-- About Card -->
-            <div class="w3-card w3-margin w3-margin-top">
-                <img src="https://www.w3schools.com/w3images/avatar_g.jpg" style="width:100%">
-                <div class="w3-container w3-white">
-                    <h4><b>Shawshank</b></h4>
-                    <p>"A Fuga de Shawshank" é um drama emocionante e comovente que explora temas como redenção, esperança e a busca pela liberdade. O filme é considerado um clássico do cinema e marcou a carreira de Tim Robbins e Morgan Freeman, que entregam performances memoráveis como Andy e Red. A direção impecável de Frank Darabont e a trilha sonora inesquecível de Thomas Newman completam a experiência cinematográfica e tornam "A Fuga de Shawshank" um filme inesquecível que continua a emocionar o público até hoje.</p>
-                </div>
-            </div><hr>
-
-            <!-- Posts -->
-            <div class="w3-card w3-margin">
-                <div class="w3-container w3-padding">
-                    <h4>Popular Posts</h4>
-                </div>
-                <ul class="w3-ul w3-hoverable w3-white">
-                    <li class="w3-padding-16">
-                        <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                        <span class="w3-large">Lorem</span><br>
-                        <span>Sed mattis nunc</span>
+            <div class="collapse navbar-collapse" id="secondaryNavbar">
+                <ul class="navbar-nav mr-auto"> <!-- "mr-auto" direciona os textos para o lado esquerdo da pagina -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="ação.html">Ação e aventura</a>
                     </li>
-                    <li class="w3-padding-16">
-                        <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                        <span class="w3-large">Ipsum</span><br>
-                        <span>Praes tinci sed</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comedia.html">Comédia</a>
                     </li>
-                    <li class="w3-padding-16">
-                        <img src="https://www.w3schools.com/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                        <span class="w3-large">Dorum</span><br>
-                        <span>Ultricies congue</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="drama.html">Drama</a>
                     </li>
-                    <li class="w3-padding-16 w3-hide-medium w3-hide-small">
-                        <img src="https://www.w3schools.com/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-                        <span class="w3-large">Mingsum</span><br>
-                        <span>Lorem ipsum dipsum</span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="romance.html">Romance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terror.html">Terror</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ficção.html">Ficção Científica</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentario.html">Documentário</a>
                     </li>
                 </ul>
             </div>
-            <hr>
+        </nav>
+    </header>
 
-            <!-- Labels / tags -->
-            <div class="w3-card w3-margin">
-                <div class="w3-container w3-padding">
-                    <h4>Tags</h4>
-                </div>
-                <div class="w3-container w3-white">
-                    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
-                    </p>
+    <!-- Seção Principal -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <h1 class="mt-4">Últimas Críticas de Filmes</h1>
+                    <article class="mb-4">
+                        <h2>Filme 1</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </article>
+                    <article class="mb-4">
+                        <h2>Filme 2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </article>
+                    <!-- Adicione mais artigos conforme necessário -->
                 </div>
             </div>
-
-            <!-- END Introduction Menu -->
         </div>
+    </main>
 
-        <!-- END GRID -->
-    </div><br>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Críticas de Filmes. Todos os direitos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#" class="text-white">Termos de Uso</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="text-white">Política de Privacidade</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
-    <!-- END w3-content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
-    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
-    <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
-
+    <!-- Scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
