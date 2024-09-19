@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 # Projeto-Site-Filmes
 
 # Projeto de Site de Filmes 🎬
@@ -31,4 +30,3 @@ Ainda há muito a ser feito, mas estou animada para continuar melhorando este pr
 
 Se quiser contribuir com sugestões ou feedbacks, fique à vontade para abrir uma _issue_ ou enviar um _pull request_.
 
->>>>>>> 0bf14051845b498ea84b0dd4fff5c2909fbaabd6
